@@ -1,18 +1,19 @@
 ---
 name: viral-tiktok-hooks
-description: Generates viral-style TikTok hooks and 6-slide scripts in a real, conversational voice. Uses psychology-backed structure, listicle tension, relatable complaints, and specific actions. Includes natural product integration without sounding salesy.
+description: Generates viral-style TikTok slide scripts with multiple formats, angles, and voices. Avoids repetition by rotating hook structures, slide counts, emotional angles, and content styles. Includes natural product integration without sounding salesy.
 ---
 
 # Viral TikTok Hooks
 
-Create short-form TikTok slide scripts that feel like a friend sharing what actually worked.
+Create short-form TikTok slide scripts that feel like a real person talking, not a template.
 
 This skill is optimized for:
 
-- Numbered listicle hooks
-- 6-slide formats (1 hook + 5 content slides)
+- Maximum output variety across sessions (never reuse the same hook shape twice in a row)
+- Multiple slide formats (5, 6, 7, or story-arc structures)
+- Multiple emotional angles (loss aversion, identity, curiosity, shame-release, revenge arc, quiet confidence)
 - Authentic, imperfect, human voice
-- Natural product mention on slide 3 or 4
+- Natural product mention that fits the story
 
 ## When To Use
 
@@ -23,15 +24,17 @@ Use this skill when the user asks for:
 - Content that sounds personal and relatable
 - Product mentions that do not feel like ads
 - Retention, churn, loyalty, engagement, or repeat-customer content
+- Multiple content variations to avoid feed fatigue
 
 ## Core Outcome
 
-Produce one ready-to-use 6-slide script that:
+Produce one ready-to-use slide script that:
 
-- Stops scroll with a specific, numbered hook
-- Builds trust with honest, relatable pain points
+- Stops scroll with a hook that matches the chosen angle
+- Builds trust with honest, relatable pain or insight
 - Gives concrete actions the viewer can copy today
-- Integrates product naturally in slide 3 or 4
+- Integrates product naturally in the middle third
+- Feels different from the last script generated
 
 ## Input Contract
 
@@ -42,77 +45,168 @@ Collect these inputs first:
 3. Main pain point
 4. Desired result
 5. Any personal story or real detail
+6. (Optional) Angle or format preference
 
-If key context is missing, ask up to 5 short questions.
+If key context is missing, ask up to 3 short questions.
 If the user does not respond, proceed with clear assumptions and state them in one line before output.
 
-## Non-Negotiable Rules
+## Anti-Repetition Rule (Critical)
 
-1. Return exactly 6 slides.
-2. Slide 1 is hook only.
-3. Slides 2-6 each contain exactly 3 lines:
-   - Numbered heading
-   - Relatable complaint
-   - Specific action
-4. All slide text is lowercase.
-5. Product mention appears exactly once on slide 3 or 4.
-6. Tone is conversational, not guru-like.
-7. No hashtags, no emojis, no motivational cliches.
-8. Avoid these words: mindset, hustle, grind, level up, game changer, transform, next level, unleash, disrupt.
-9. Keep actions concrete and easy to do today.
-10. Do not over-explain psychology in the final script.
+Before generating, select ONE format and ONE angle from the tables below. Never default to the same combination twice. Rotate deliberately. If the user asks for multiple scripts, each must use a different format+angle pair.
 
-## Writing System
+---
 
-### 1) Hook Engine (Slide 1)
+## Format Library
 
-Use a numbered open loop. Preferred shape:
+### Format A — Numbered Listicle (5 items, 6 slides)
 
-- "5 ways i finally stopped [pain]"
-- "5 shifts that helped me stop [pain]"
-- "5 things i changed to fix [pain]"
+Classic. Hook + 5 numbered content slides. Each slide: heading + complaint + action.
 
-Hook requirements:
+### Format B — Before/After Arc (5 slides)
 
-- Specific pain, not vague ambition
+Slide 1: hook (what life looked like before)
+Slide 2: the moment things broke
+Slide 3: the shift (product here)
+Slide 4: what changed
+Slide 5: where things are now
+
+### Format C — Myth Busting (6 slides)
+
+Slide 1: hook ("everything i believed about [x] was wrong")
+Slides 2-6: one common belief per slide + why it fails + what to do instead
+
+### Format D — Numbered Listicle (4 items, 5 slides)
+
+Shorter. Tighter. Hook + 4 slides. Good for mobile-first audiences with low patience.
+
+### Format E — Confession Arc (5 slides)
+
+Slide 1: hook (confession framing: "i was doing [x] wrong for years")
+Slide 2: the embarrassing mistake
+Slide 3: what actually works (product here)
+Slide 4: the result
+Slide 5: the one thing to do today
+
+### Format F — Reverse Listicle (6 slides)
+
+Hook frames what NOT to do. Each slide: a bad habit + why it costs you + the fix.
+
+### Format G — Question Ladder (6 slides)
+
+Slide 1: hook (open question the viewer is already asking themselves)
+Slides 2-5: one question per slide that builds tension
+Slide 6: the answer + product + action
+
+---
+
+## Angle Library
+
+| Angle              | Hook Feeling                                                | Best For                       |
+| ------------------ | ----------------------------------------------------------- | ------------------------------ |
+| Loss Aversion      | "i was losing X without knowing it"                         | re-engagement, churn           |
+| Identity Shift     | "i stopped being the person who [old behavior]"             | lifestyle, habit change        |
+| Curiosity Gap      | "the thing nobody tells you about [topic]"                  | education, discovery           |
+| Shame Release      | "i was embarrassed until i realized everyone does this"     | trust, vulnerability           |
+| Revenge Arc        | "they said it wouldn't work — here's what happened"         | social proof, proof of concept |
+| Quiet Confidence   | "i don't talk about this much but it works every time"      | authority, insider feel        |
+| Peer Pressure Flip | "everyone i know does [wrong thing] — i stopped"            | differentiation                |
+| Specific Number    | "i lost [X clients/dollars/days] before i figured this out" | specificity, urgency           |
+
+---
+
+## Hook Engine
+
+Vary the hook shape based on angle. Do NOT always use "5 ways i finally stopped [pain]."
+
+Loss Aversion shapes:
+
+- "i was losing [specific thing] every [time period] and didn't know it"
+- "[number] signs your [thing] is costing you more than you think"
+- "what [number] months of [mistake] actually cost me"
+
+Identity Shift shapes:
+
+- "i used to be the [type of person]. not anymore."
+- "[number] things i stopped doing to [result]"
+- "the version of me from a year ago would not recognize this"
+
+Curiosity Gap shapes:
+
+- "nobody talks about [specific thing] and it's the whole game"
+- "the thing that actually moved the needle wasn't what i expected"
+- "[number] things i wish someone told me before [situation]"
+
+Shame Release shapes:
+
+- "i was doing [specific thing] wrong and didn't tell anyone"
+- "honest confession: i had no idea what i was doing with [thing]"
+- "not gonna lie — i avoided this for way too long"
+
+Revenge Arc shapes:
+
+- "they said [small business / freelancers / etc] can't [result]. here's what happened."
+- "i proved [common belief] wrong in [timeframe]"
+- "what happened when i ignored the standard advice"
+
+Quiet Confidence shapes:
+
+- "quietly, this is the thing that changed everything"
+- "i don't post about this often but [result] happened because of [thing]"
+- "this is boring but it's the only thing that actually works"
+
+Hook requirements (all angles):
+
+- Specific pain or insight, not vague ambition
 - First-person framing ("i")
-- Implies there is a full set to complete
+- Creates an open loop the viewer needs to close
 
-### 2) Content Slides (Slides 2-6)
+---
 
-Each slide must follow this structure:
+## Content Slide Structures
 
-Line 1: Numbered heading
+Choose a structure for content slides based on format:
 
-- Format: "n. [5-7 word mini-title]"
-- Example: "2. i fixed my follow-up timing"
+**Standard (Formats A, D, F):**
+Line 1: numbered heading (5-7 words)
+Line 2: relatable complaint or observation (8-14 words)
+Line 3: concrete action (under 14 words)
 
-Line 2: Relatable complaint
+**Story Beat (Formats B, E):**
+Line 1: scene or moment (what was happening)
+Line 2: what it felt like or cost
+Line 3: what changed or what to do
 
-- 8-14 words
-- Sounds like real frustration
-- Example: "people bought once, then disappeared and i had no clue why"
+**Myth Busting (Format C):**
+Line 1: the belief (stated plainly)
+Line 2: why it fails
+Line 3: what to do instead
 
-Line 3: Specific action
+**Question (Format G):**
+Line 1: the question
+Line 2: why most people get stuck here
+Line 3: what the answer actually looks like
 
-- Under 14 words
-- Clear and simple step
-- Example: "i sent one check-in text 7 days later, nothing fancy"
+---
 
-### 3) Product Integration
+## Product Integration
 
-On slide 3 or 4 only:
+On the middle third of the script only (never slide 1, never the last slide):
 
-- Mention product as the natural solution to that slide complaint.
+- Mention product as the natural solution to that slide's problem.
 - Lead with the problem solved, not product features.
+- One mention total.
 
 Good:
 
-- "i started using [product] to make repeat visits easier to track"
+- "i started using [product] to track who came back — i was guessing before"
+- "honestly [product] handled the part i kept putting off"
 
 Bad:
 
 - "our revolutionary platform transforms retention with cutting-edge automation"
+- "[product] is the best tool for [thing]"
+
+---
 
 ## Voice And Tone
 
@@ -123,18 +217,38 @@ Write like a trusted friend in a group chat:
 - practical
 - grounded
 
-Style signals:
+Style signals (rotate — do not use all in one script):
 
 - "honestly"
 - "not gonna lie"
 - "this sounds simple but"
 - "nothing fancy"
+- "i know this sounds obvious"
+- "it took me longer than i'd like to admit"
+- "nobody told me this"
+- "quietly"
 
 Avoid:
 
 - corporate language
 - inflated claims
 - preachy advice
+- starting multiple slides with the same phrase
+
+---
+
+## Non-Negotiable Rules
+
+1. All slide text is lowercase.
+2. Product mention appears exactly once, in the middle third.
+3. Tone is conversational, not guru-like.
+4. No hashtags, no emojis, no motivational cliches.
+5. Avoid: mindset, hustle, grind, level up, game changer, transform, next level, unleash, disrupt, journey, passion.
+6. Keep actions concrete and easy to do today.
+7. Do not over-explain psychology in the final script.
+8. Each script must feel different from the last — vary hook shape, slide structure, and angle deliberately.
+
+---
 
 ## Psychology (Use Internally)
 
@@ -145,57 +259,46 @@ Use these principles while generating, but keep final copy clean:
 - Pratfall Effect: small imperfection increases trust.
 - Reciprocity: give value before the product mention.
 - Loss Aversion: "stop losing" often outperforms "start winning".
+- Identity: people protect their self-image — frame the shift as "who I became" not "what I did".
+- Specificity bias: concrete numbers and details feel more credible than general claims.
 
-## Output Format (Strict)
+---
 
-Return output in this exact structure:
+## Output Format
 
-SLIDE 1:
-[hook only]
+State the format and angle chosen in one line before output:
 
-SLIDE 2:
+> Format: [letter] — Angle: [name]
 
-1. [heading]
-   [complaint]
-   [action]
-
-SLIDE 3: 2. [heading]
-[complaint]
-[action]
-
-SLIDE 4: 3. [heading]
-[complaint]
-[action]
-
-SLIDE 5: 4. [heading]
-[complaint]
-[action]
-
-SLIDE 6: 5. [heading]
-[complaint]
-[action]
+Then deliver the script with labeled slides.
 
 Do not add extra commentary after the slides unless the user asks for explanation.
+
+---
+
+## Multiple Script Requests
+
+If the user asks for 2+ scripts:
+
+- Each must use a different format+angle combination.
+- Separate them clearly with a divider.
+- Vary hook shape, slide tone, and complaint language — no two scripts should feel like variations of the same template.
+
+---
 
 ## Quality Checklist Before Finalizing
 
 - Hook is specific and first-person.
 - All text is lowercase.
-- Slides 2-6 have exactly 3 lines each.
 - Complaints feel real, not generic.
 - Actions are concrete and short.
-- Product appears once on slide 3 or 4.
+- Product appears once in the middle third.
 - No banned words.
 - No ad-like phrasing.
+- This script feels different from the most recently generated one.
+- Format and angle are stated above the script.
 
-## Optional Variations
-
-If the user asks for more options, provide:
-
-- 3 alternate hooks only, or
-- 2 full script variations with different angles:
-  - angle A: loss aversion
-  - angle B: identity shift
+---
 
 ## Domain Defaults (If User Gives No Niche)
 
@@ -206,29 +309,64 @@ Assume:
 - Pain: one-time buyers do not come back
 - Product framing: simple retention system that customers actually use
 
-## Example
+---
+
+## Examples
+
+### Example 1 — Format A, Angle: Loss Aversion
+
+> Format: A — Angle: Loss Aversion
 
 SLIDE 1:
-5 ways i finally stopped losing one-time buyers
+5 things i was doing that were slowly costing me repeat customers
 
 SLIDE 2:
 
-1. i stopped assuming they would remember me
-   people bought once and forgot about me by next week
-   i sent a simple thank-you text right after each purchase
+1. i assumed silence meant satisfaction
+   people disappeared after buying and i thought they were happy
+   i sent a short check-in three days after every purchase
 
-SLIDE 3: 2. i made returning feel easy
-honestly i had no system and follow-up was all over the place
-i used membresi to send wallet passes customers actually kept
+SLIDE 3: 2. i had no way to see who came back
+i was guessing at loyalty based on gut feeling, not data
+i used membresi to track repeat visits so i could actually see patterns
 
-SLIDE 4: 3. i stopped discounting every time
-i was training people to wait for deals and margins tanked
-i rewarded repeat visits instead of cutting price again
+SLIDE 4: 3. i kept discounting to win people back
+every promo trained them to wait for a deal before returning
+i rewarded early return visits instead of cutting price
 
-SLIDE 5: 4. i tracked who came back
-not gonna lie i had zero visibility into repeat behavior
-i checked a weekly repeat-customer list every friday
+SLIDE 5: 4. i never asked what made them come back
+i had no idea what was working so i couldn't repeat it
+i added one question to my post-purchase follow-up
 
-SLIDE 6: 5. i added one tiny follow-up
-after first purchase i would disappear until they needed me
-i sent one check-in message 10 days later, nothing fancy
+SLIDE 6: 5. i went quiet after the sale
+i thought following up felt pushy — it was actually just awkward silence
+i sent one message at day 10, kept it short, no pitch
+
+---
+
+### Example 2 — Format E, Angle: Shame Release
+
+> Format: E — Angle: Shame Release
+
+SLIDE 1:
+honest confession: i had no system for keeping customers and i pretended i did
+
+SLIDE 2:
+i was tracking repeat buyers in a notes app
+it was embarrassing — names, dates, nothing connected
+i kept it going for eight months before i admitted it wasn't working
+
+SLIDE 3:
+the shift happened when i stopped trying to build it myself
+membresi did the follow-up tracking i kept putting off
+it wasn't fancy. it just actually ran.
+
+SLIDE 4:
+repeat visits went up by the third month
+not because i got better at marketing — because i stopped dropping people after the sale
+the gap between first and second purchase got shorter
+
+SLIDE 5:
+the one thing i'd tell myself earlier: the follow-up is the product
+people don't come back because they forgot you, not because they didn't like you
+send the message. it takes two minutes.
