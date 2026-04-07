@@ -1,6 +1,6 @@
 ---
 name: viral-tiktok-hooks
-description: Generates viral-style TikTok slide scripts with multiple formats, angles, and voices. Avoids repetition by rotating hook structures, slide counts, emotional angles, and content styles. Includes natural product integration without sounding salesy.
+description: Generates viral-style TikTok slide scripts with multiple formats, angles, and voices. Use this skill whenever someone asks for TikTok content, slide scripts, short-form video hooks, or content that needs to stop the scroll — even if they don't say "TikTok" explicitly. Avoids repetition by rotating hook structures, slide counts, emotional angles, and content styles. Includes natural product integration without sounding salesy.
 ---
 
 # Viral TikTok Hooks
@@ -14,13 +14,14 @@ This skill is optimized for:
 - Multiple emotional angles (loss aversion, identity, curiosity, shame-release, revenge arc, quiet confidence)
 - Authentic, imperfect, human voice
 - Natural product mention that fits the story
+- Mobile-first slide length (15–25 words per slide maximum)
 
 ## When To Use
 
 Use this skill when the user asks for:
 
-- TikTok hooks
-- Slide-by-slide short video scripts
+- TikTok hooks, slides, or scripts
+- Short-form video content or carousels
 - Content that sounds personal and relatable
 - Product mentions that do not feel like ads
 - Retention, churn, loyalty, engagement, or repeat-customer content
@@ -34,21 +35,26 @@ Produce one ready-to-use slide script that:
 - Builds trust with honest, relatable pain or insight
 - Gives concrete actions the viewer can copy today
 - Integrates product naturally in the middle third
+- Ends with a CTA slide that invites low-friction action
 - Feels different from the last script generated
+- Fits mobile screens — 15–25 words per slide, never more
 
 ## Input Contract
 
 Collect these inputs first:
 
-1. Product or service
+1. Product or service (name + what it does)
 2. Target audience
 3. Main pain point
 4. Desired result
 5. Any personal story or real detail
 6. (Optional) Angle or format preference
 
-If key context is missing, ask up to 3 short questions.
-If the user does not respond, proceed with clear assumptions and state them in one line before output.
+If key context is missing, ask up to 3 short questions. If the user does not respond or provides minimal context, proceed immediately — state your assumptions in one clear line before the script begins, like:
+
+> Assuming: gym app called [App], audience = people who hate going to the gym, goal = build a sustainable habit at home.
+
+If the product has no name, use a bracketed placeholder once in the script (e.g. `[your app]`) and note it in the assumptions line.
 
 ## Anti-Repetition Rule (Critical)
 
@@ -58,44 +64,57 @@ Before generating, select ONE format and ONE angle from the tables below. Never 
 
 ## Format Library
 
-### Format A — Numbered Listicle (5 items, 6 slides)
+### Format A — Numbered Listicle (5 items, 6 slides + CTA)
 
-Classic. Hook + 5 numbered content slides. Each slide: heading + complaint + action.
+Classic. Hook + 5 numbered content slides + CTA. Each content slide: heading + complaint + action.
 
-### Format B — Before/After Arc (5 slides)
+### Format B — Before/After Arc (5 slides + CTA)
 
 Slide 1: hook (what life looked like before)
 Slide 2: the moment things broke
 Slide 3: the shift (product here)
 Slide 4: what changed
 Slide 5: where things are now
+Slide 6: CTA
 
-### Format C — Myth Busting (6 slides)
+### Format C — Myth Busting (6 slides + CTA)
 
 Slide 1: hook ("everything i believed about [x] was wrong")
-Slides 2-6: one common belief per slide + why it fails + what to do instead
+Slides 2–6: one common belief per slide + why it fails + what to do instead
+Slide 7: CTA
 
-### Format D — Numbered Listicle (4 items, 5 slides)
+### Format D — Numbered Listicle (4 items, 5 slides + CTA)
 
-Shorter. Tighter. Hook + 4 slides. Good for mobile-first audiences with low patience.
+Shorter. Tighter. Hook + 4 slides + CTA. Good for mobile-first audiences with low patience.
 
-### Format E — Confession Arc (5 slides)
+### Format E — Confession Arc (5 slides + CTA)
 
 Slide 1: hook (confession framing: "i was doing [x] wrong for years")
 Slide 2: the embarrassing mistake
 Slide 3: what actually works (product here)
 Slide 4: the result
 Slide 5: the one thing to do today
+Slide 6: CTA
 
-### Format F — Reverse Listicle (6 slides)
+### Format F — Reverse Listicle (6 slides + CTA)
 
 Hook frames what NOT to do. Each slide: a bad habit + why it costs you + the fix.
 
-### Format G — Question Ladder (6 slides)
+### Format G — Question Ladder (6 slides + CTA)
 
 Slide 1: hook (open question the viewer is already asking themselves)
-Slides 2-5: one question per slide that builds tension
+Slides 2–5: one question per slide that builds tension
 Slide 6: the answer + product + action
+Slide 7: CTA
+
+### Format H — Hot Take (5 slides + CTA)
+
+Slide 1: hook (a bold or counterintuitive claim)
+Slide 2: why everyone gets this wrong
+Slide 3: the real truth (product fits here if relevant)
+Slide 4: what changes when you see it this way
+Slide 5: the one thing to do differently starting today
+Slide 6: CTA
 
 ---
 
@@ -164,12 +183,12 @@ Hook requirements (all angles):
 
 ## Content Slide Structures
 
-Choose a structure for content slides based on format:
+Keep every slide to 15–25 words. TikTok is read on a phone in 2 seconds. If a slide needs more than 3 lines, cut it.
 
 **Standard (Formats A, D, F):**
-Line 1: numbered heading (5-7 words)
-Line 2: relatable complaint or observation (8-14 words)
-Line 3: concrete action (under 14 words)
+Line 1: numbered heading (5–7 words)
+Line 2: relatable complaint or observation (8–14 words)
+Line 3: concrete action (under 12 words)
 
 **Story Beat (Formats B, E):**
 Line 1: scene or moment (what was happening)
@@ -186,23 +205,46 @@ Line 1: the question
 Line 2: why most people get stuck here
 Line 3: what the answer actually looks like
 
+**Hot Take (Format H):**
+Line 1: the counterintuitive truth
+Line 2: what most people do wrong
+Line 3: the reframe
+
+---
+
+## CTA Slide
+
+Every script ends with a CTA slide. Keep it under 15 words. Pick one:
+
+- Follow for more [specific topic the viewer cares about]
+- Save this if [the thing they just learned applies to them]
+- Comment [word] if [you relate to this]
+- Try [product] free — link in bio
+
+Vary the CTA type across scripts. Do not always use the same one.
+
+Good CTA examples:
+- "follow if you're done losing customers after the first sale"
+- "save this — you'll want it next time they ghost you"
+- "comment YES if you've been doing this too"
+- "try [product] free this week — link in bio"
+
 ---
 
 ## Product Integration
 
-On the middle third of the script only (never slide 1, never the last slide):
+On the middle third of the script only (never slide 1, never the CTA slide):
 
 - Mention product as the natural solution to that slide's problem.
 - Lead with the problem solved, not product features.
 - One mention total.
+- If the product has no name, use `[your product]` as the placeholder.
 
 Good:
-
 - "i started using [product] to track who came back — i was guessing before"
 - "honestly [product] handled the part i kept putting off"
 
 Bad:
-
 - "our revolutionary platform transforms retention with cutting-edge automation"
 - "[product] is the best tool for [thing]"
 
@@ -240,13 +282,15 @@ Avoid:
 ## Non-Negotiable Rules
 
 1. All slide text is lowercase.
-2. Product mention appears exactly once, in the middle third.
+2. Product mention appears exactly once, in the middle third (never on slide 1, never on the CTA slide).
 3. Tone is conversational, not guru-like.
 4. No hashtags, no emojis, no motivational cliches.
 5. Avoid: mindset, hustle, grind, level up, game changer, transform, next level, unleash, disrupt, journey, passion.
 6. Keep actions concrete and easy to do today.
 7. Do not over-explain psychology in the final script.
 8. Each script must feel different from the last — vary hook shape, slide structure, and angle deliberately.
+9. Every script ends with a CTA slide.
+10. Every slide is 15–25 words maximum.
 
 ---
 
@@ -266,7 +310,11 @@ Use these principles while generating, but keep final copy clean:
 
 ## Output Format
 
-State the format and angle chosen in one line before output:
+If you made assumptions due to missing input, state them in one line before the script:
+
+> Assuming: [product name], [audience], [main pain/goal].
+
+Then state the format and angle chosen:
 
 > Format: [letter] — Angle: [name]
 
@@ -283,6 +331,7 @@ If the user asks for 2+ scripts:
 - Each must use a different format+angle combination.
 - Separate them clearly with a divider.
 - Vary hook shape, slide tone, and complaint language — no two scripts should feel like variations of the same template.
+- Vary the CTA type across scripts.
 
 ---
 
@@ -295,7 +344,10 @@ If the user asks for 2+ scripts:
 - Product appears once in the middle third.
 - No banned words.
 - No ad-like phrasing.
+- CTA slide is present and fits the script's emotional tone.
+- Every slide is under 25 words.
 - This script feels different from the most recently generated one.
+- Assumptions stated (if input was minimal).
 - Format and angle are stated above the script.
 
 ---
@@ -321,26 +373,32 @@ SLIDE 1:
 5 things i was doing that were slowly costing me repeat customers
 
 SLIDE 2:
-
 1. i assumed silence meant satisfaction
-   people disappeared after buying and i thought they were happy
-   i sent a short check-in three days after every purchase
+people disappeared after buying and i thought they were happy
+i sent a short check-in three days after every purchase
 
-SLIDE 3: 2. i had no way to see who came back
+SLIDE 3:
+2. i had no way to see who came back
 i was guessing at loyalty based on gut feeling, not data
 i used membresi to track repeat visits so i could actually see patterns
 
-SLIDE 4: 3. i kept discounting to win people back
+SLIDE 4:
+3. i kept discounting to win people back
 every promo trained them to wait for a deal before returning
 i rewarded early return visits instead of cutting price
 
-SLIDE 5: 4. i never asked what made them come back
+SLIDE 5:
+4. i never asked what made them come back
 i had no idea what was working so i couldn't repeat it
 i added one question to my post-purchase follow-up
 
-SLIDE 6: 5. i went quiet after the sale
+SLIDE 6:
+5. i went quiet after the sale
 i thought following up felt pushy — it was actually just awkward silence
 i sent one message at day 10, kept it short, no pitch
+
+SLIDE 7 (CTA):
+follow if you're done losing customers after the first sale
 
 ---
 
@@ -370,3 +428,6 @@ SLIDE 5:
 the one thing i'd tell myself earlier: the follow-up is the product
 people don't come back because they forgot you, not because they didn't like you
 send the message. it takes two minutes.
+
+SLIDE 6 (CTA):
+save this — you'll want it next time they go quiet after buying
